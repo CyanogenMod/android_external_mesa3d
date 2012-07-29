@@ -135,6 +135,10 @@ else
 LOCAL_CFLAGS += -O3
 endif
 
+ifeq ($(TARGET_PLATFORM),exynos4)
+LOCAL_CFLAGS += -DGLES2_NO_DISCARD_FRAMEBUFFER
+endif
+
 LOCAL_MODULE := libMesa
 LOCAL_SRC_FILES := $(libMesa_SRC_FILES)
 
