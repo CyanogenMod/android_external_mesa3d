@@ -600,7 +600,9 @@ typedef void (GL_APIENTRYP PFNGLGETPERFMONITORCOUNTERDATAAMDPROC) (GLuint monito
 
 /* GL_EXT_discard_framebuffer */
 #ifndef GL_EXT_discard_framebuffer
+#ifndef EXYNOS4_ENHANCEMENTS
 #define GL_EXT_discard_framebuffer 1
+#endif
 #ifdef GL_GLEXT_PROTOTYPES
 GL_APICALL void GL_APIENTRY glDiscardFramebufferEXT (GLenum target, GLsizei numAttachments, const GLenum *attachments);
 #endif
